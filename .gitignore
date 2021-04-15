@@ -1,0 +1,7 @@
+/.apt_generated/
+/bin/
+/target/
+*.class
+/**/.classpath
+hs_err_pid*
+/**/.settings/

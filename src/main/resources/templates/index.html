@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Provivi</title>
+	<link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" th:src="@{/js/jquery-3.6.0.min.js}"></script>
+	<script type="text/javascript" th:src="@{/js/provivi.js}"></script>
+</head>
+<body>
+	<div class="row">
+		<div class="col-sm-6 offset-md-3">
+			<h1>Provivi Test</h1>
+			<div  class="mt-9 align-items-center mt-5">
+				<h3>SUM</h3>
+				<div class="row">
+					<div class="col-md">
+						<div class="div-group">
+							<label>First Number</label>
+							<input id="addFirstNumber" type="number" class="form-control" placeholder="First Number">
+						</div>
+					</div>
+					<div class="col-md">
+						<div class="div-group">
+							<label>First Number</label>
+							<input id="addSecondNumber" type="number" class="form-control" placeholder="Second Number">
+						</div>
+					</div>
+					<div class="col-md">
+						<button class="btn btn-primary btn-large btn-block mt-4" onclick="addition();">Add</button>
+					</div>
+					<div class="col-md">
+						Result: <label id="resultSum" class="mt-4">0</label>
+					</div>
+					<div class="col-md">
+						<button class="btn btn-primary" onclick="cleanAddition();">Clear</button>
+					</div>
+				</div>
+			</div>
+			<div  class="mt-9 align-items-center mt-5">
+				<h3>PRODUCT</h3>
+				<div class="row">
+					<div class="col-md">
+						<div class="div-group">
+							<label>Number</label>
+							<input id="productValue"  type="number" class="form-control" placeholder="First Number">
+						</div>
+					</div>
+					<div class="col-md">
+						<button class="btn btn-primary btn-large btn-block mt-4" onclick="product();">Get Product</button>
+					</div>
+					<div class="col-md">
+						Result: <label id="resultProduct" class="mt-4">0</label>
+					</div>
+					<div class="col-md">
+						<button class="btn btn-primary" onclick="cleanProduct();">Clear</button>
+					</div>
+				</div>
+			</div>
+			<div  class="mt-9 align-items-center mt-5">
+				<h3>POWER</h3>
+				<div class="row">
+					<div class="col-md">
+						<div class="div-group">
+							<label>Number</label>
+							<input id="powerValue" type="number" class="form-control" placeholder="First Number">
+						</div>
+					</div>
+					<div class="col-md">
+						<button class="btn btn-primary btn-large btn-block mt-4" onclick="power();">Get Power</button>
+					</div>
+					<div class="col-md">
+						Result: <label id="resultPower" class="mt-4">0</label>
+					</div>
+					<div class="col-md">
+						<button class="btn btn-primary" onclick="cleanPower();">Clear</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
